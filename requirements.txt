@@ -1,0 +1,4 @@
+kaggle==2.2.1
+
+# Install separately on Windows to avoid long-path failures from optional deps:
+# python -m pip install --no-deps kaggle-environments==1.28.0

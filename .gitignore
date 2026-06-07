@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+
+data/
+logs/
+replays/
+eval_results/
+submission.tar.gz
+
+.env
+kaggle.json
+access_token
