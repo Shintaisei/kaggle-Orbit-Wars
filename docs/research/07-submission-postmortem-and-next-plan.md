@@ -10,7 +10,7 @@ Current latest-observed public-LB best is:
 
 - `candidates/production_candidate.py` / Loop046
 - locked snapshot: `locked_submissions/53439162_loop046_production_candidate_PENDING.py`
-- latest observed public score: 915.2 at `2026-06-07T13:48:44+09:00`
+- latest observed public score: 933.1 at `2026-06-07T13:58:29+09:00`
 - SHA256: `B69C084A3DCD18F24D19E51EAB68B93B5D9781B7A6FEC9CDA31ACD18C8220DB4`
 
 Do not overwrite `main.py` yet until the score is stable across another check, but treat Loop046 as the current challenger to preserve and build from cautiously:
@@ -24,13 +24,13 @@ Loop046 is now the latest-observed leader. Loop033 is no longer a near-miss in t
 
 ## Submission Results
 
-Latest observed at `2026-06-07T13:48:44+09:00`:
+Latest observed at `2026-06-07T13:58:29+09:00`:
 
 | Ref | File | Family | Public score | Decision |
 | --- | --- | --- | ---: | --- |
-| 53439162 | `production_candidate.py` | Loop046, mode split ratio 2P 1.20 / 4P 1.35, commit guard family | 915.2 | Latest-observed leader |
+| 53439162 | `production_candidate.py` | Loop046, mode split ratio 2P 1.20 / 4P 1.35, commit guard family | 933.1 | Latest-observed leader |
 | 53418690 | `main.py` / locked 908 | public vickimar fixed baseline | 908.0 | Previous best |
-| 53439169 | `research_best_4p.py` | Loop033, Loop021 plus ratio 1.35 | 885.7 | Useful signal, below 908 in latest snapshot |
+| 53439169 | `research_best_4p.py` | Loop033, Loop021 plus ratio 1.35 | 907.8 | Near-tie useful signal, not leader |
 | 53439165 | `research_best_2p.py` | Loop021, return-aware commit-drop | 600.0 | Pending interpretation; likely not fully evaluated yet |
 
 Local locked snapshots:
@@ -66,7 +66,7 @@ Loop046 looked strong under fixed local evaluation:
 
 Public LB now promotes it in the latest observed snapshot:
 
-- Loop046 latest observed public score: 915.2.
+- Loop046 latest observed public score: 933.1.
 - Previous best public score: 908.0.
 
 Interpretation:
@@ -128,9 +128,9 @@ Do not:
 | --- | --- | --- |
 | `main.py` | Previous best | Public 908.0 |
 | `locked_submissions/53418690_vickimar_heuristic_fixed_SCORE_908_0.py` | Canonical 908 baseline | Exact snapshot of current best |
-| `candidates/production_candidate.py` | Latest-observed leader | Latest public 915.2 |
+| `candidates/production_candidate.py` | Latest-observed leader | Latest public 933.1 |
 | `candidates/research_best_2p.py` | Unresolved | Public still 600.0, may not have fully evaluated |
-| `candidates/research_best_4p.py` | Useful signal | Latest public 885.7 |
+| `candidates/research_best_4p.py` | Useful near-tie signal | Latest public 907.8 |
 | `candidates/loop_047_opening4p14.py` | Rejected | Worse local 4P seat0 |
 | `candidates/loop_048_prod_reserve_4p.py` | Rejected / stop | Bad partial local signal, 11 rows only |
 | `candidates/loop_049_locked908_ratio4p135.py` | Rejected / stop | Starts from locked 908, no commit guard; 4P seat0 screen failed |
@@ -226,13 +226,13 @@ Interpretation:
 
 ## Score Refresh And Action Analysis
 
-Latest observed at `2026-06-07T13:50:56+09:00`:
+Latest observed at `2026-06-07T13:58:29+09:00`:
 
 | Ref | File | Public score | Interpretation |
 | --- | --- | ---: | --- |
-| 53439162 | `production_candidate.py` / Loop046 | 915.2 | Current latest-observed leader |
+| 53439162 | `production_candidate.py` / Loop046 | 933.1 | Current latest-observed leader |
 | 53418690 | `main.py` / locked 908 | 908.0 | Previous best |
-| 53439169 | `research_best_4p.py` / Loop033 | 885.7 | Useful but below 908 in latest snapshot |
+| 53439169 | `research_best_4p.py` / Loop033 | 907.8 | Near-tie useful signal, not leader |
 | 53439165 | `research_best_2p.py` / Loop021 | 600.0 display | Do not conclude; may be early/placeholder evaluation |
 
 Code comparison:

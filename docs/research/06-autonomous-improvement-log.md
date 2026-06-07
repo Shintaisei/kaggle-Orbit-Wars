@@ -1828,7 +1828,7 @@ Locked local snapshots:
 - `locked_submissions/53439165_loop021_research_best_2p_PENDING.py`
 - `locked_submissions/53439169_loop033_research_best_4p_PENDING.py`
 
-Public LB result after score refresh, latest observed at `2026-06-07T13:48:44+09:00`:
+Public LB result after score refresh, observed at `2026-06-07T13:48:44+09:00`:
 - `53439162` Loop046: COMPLETE, public score 915.2.
 - `53439165` Loop021: COMPLETE, public score 600.0.
 - `53439169` Loop033: COMPLETE, public score 885.7.
@@ -1844,9 +1844,19 @@ Immediate postmortem hypotheses:
 - The local opponent pool overfit against known public agents and did not represent leaderboard map/opponent distribution.
 - The fixed-map protocol may have measured head-to-head raw score rather than broad survival/Elo robustness.
 - Candidate changes may exploit weaknesses in `main.py` while losing to broader LB strategies.
-- The commit-guard family is no longer categorically suspicious because Loop046 is latest-observed 915.2.
+- The commit-guard family is no longer categorically suspicious because Loop046 was latest-observed leader at that checkpoint.
 - Loop021's 600.0 may simply mean its public evaluation has not fully started; do not hard-conclude from that value alone.
 - Loop046's mode split / combined changes have real signal and should be preserved.
+
+Superseding score check, latest observed at `2026-06-07T13:58:29+09:00`:
+- `53439162` Loop046: COMPLETE, public score 933.1.
+- `53439165` Loop021: COMPLETE, public score 600.0.
+- `53439169` Loop033: COMPLETE, public score 907.8.
+
+Decision update:
+- Loop046 is the current latest-observed working champion.
+- Loop033 is now a near-tie useful signal against the 908 baseline, but it is not the leader.
+- Loop021 remains unusable as a promotion signal.
 
 ## 2026-06-07 Loop049 Locked908 + 4P Ratio Isolation
 

@@ -19,7 +19,7 @@ Use this as the canonical snapshot of the second submission / current best publi
 - Kaggle description: `Loop046 production candidate mode split 2p120 4p135 sha B69C084A pre_submit_smoke_bad0`
 - Submitted: `2026-06-07 03:32:20.583000`
 - Status at first score check: `SubmissionStatus.COMPLETE`
-- Latest observed public score: `915.2` at `2026-06-07T13:48:44+09:00`
+- Latest observed public score: `933.1` at `2026-06-07T13:58:29+09:00`
 - SHA256: `B69C084A3DCD18F24D19E51EAB68B93B5D9781B7A6FEC9CDA31ACD18C8220DB4`
 - Source relationship: exact copy of `candidates/production_candidate.py` at submit time.
 
@@ -29,7 +29,7 @@ Use this as the canonical snapshot of the second submission / current best publi
 - Kaggle description: `Loop021 research best 2p sha 059826D5 pre_submit_smoke_bad0`
 - Submitted: `2026-06-07 03:32:35.740000`
 - Status at first score check: `SubmissionStatus.COMPLETE`
-- Latest observed public score: `600.0` at `2026-06-07T13:48:44+09:00`
+- Latest observed public score: `600.0` at `2026-06-07T13:58:29+09:00`
 - SHA256: `059826D5DB7527BA28FDB02FF86A5CCCB065CA9F84A30C41F48EC4BBCF0F81C4`
 - Source relationship: exact copy of `candidates/research_best_2p.py` at submit time.
 
@@ -39,6 +39,6 @@ Use this as the canonical snapshot of the second submission / current best publi
 - Kaggle description: `Loop033 research best 4p sha 79F41A66 pre_submit_smoke_bad0`
 - Submitted: `2026-06-07 03:32:51.413000`
 - Status at first score check: `SubmissionStatus.COMPLETE`
-- Latest observed public score: `885.7` at `2026-06-07T13:48:44+09:00`
+- Latest observed public score: `907.8` at `2026-06-07T13:58:29+09:00`
 - SHA256: `79F41A66CCE1038B453D98483E716023EDCCF4938F9DB777137FB192A2C0D428`
 - Source relationship: exact copy of `candidates/research_best_4p.py` at submit time.

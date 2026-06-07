@@ -34,6 +34,8 @@ The strongest near-term path is not raw PPO/AlphaZero first. It is:
 
 The local repo already contains public Orbit Wars notebook-derived agents under `notebooks/`, and the current `main.py` appears to be an adapted public heuristic notebook rather than the tiny `baselines/path_safe_v1.py` baseline. Future work should treat `main.py` as an advanced but audit-heavy codebase, not as a clean minimal baseline.
 
+As of the latest scored-candidate analysis, `candidates/production_candidate.py` / Loop046 is the current latest-observed public-LB leader and the working champion for future experiments. The next loop should branch from Loop046, run diagnostics first, and make only one reviewed micro-change at a time. `main.py` remains the previous-best fallback until a separate promotion review approves overwriting it.
+
 ## Review Rhythm
 
 For each action card:

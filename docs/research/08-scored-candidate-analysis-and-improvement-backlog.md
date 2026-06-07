@@ -19,7 +19,15 @@ Notes:
 
 - Public score values have moved after submission, so every score claim needs an observation time.
 - Loop046 is strong enough to become the current working champion, but `main.py` should not be overwritten until another review explicitly approves it.
-- Loop021's `600.0` may be a leaderboard/evaluation artifact, but it is still not usable as a promotion signal.
+- Loop021's latest display remains `600.0`; whether this reflects final strength or a leaderboard artifact is unresolved, but it is unusable as a promotion signal.
+
+Score history observed locally:
+
+| Ref | File | Earlier observed score | Latest observed score | Read |
+| --- | --- | ---: | ---: | --- |
+| 53439162 | `production_candidate.py` | 915.2 | 933.1 | Strengthening; current working champion |
+| 53439169 | `research_best_4p.py` | 885.7 | 907.8 | Recovered to near-tie with 908 baseline |
+| 53439165 | `research_best_2p.py` | 600.0 | 600.0 | Still unresolved / not promotable |
 
 ## Diff Taxonomy
 
@@ -48,7 +56,8 @@ Existing local logs say Loop046 is a real improvement candidate, but they also s
 | Loop046 vs `main.py`, 2P, seeds 600-609 h012 | 60 | 39/60 | +798.0 | 21 | 0 | seat0 weaker than seat1 |
 | Loop046 vs 4P pool, seeds 500-504 h012 | 60 | 39/60 | +923.0 | 21 | 0 | seat0 strong, seat1/3 weaker |
 | Loop046 vs 4P pool, seeds 600-604 h012 | 60 | 36/60 | +693.6 | 24 | 0 | seat0 negative, seat3 strong |
-| Loop046 vs 4P pool, seeds 700-719 h012 | 160 | 90/160 | +371.6 | 70 | 0 | seat0: 16/40, avg -1258.9 |
+| Loop046 vs 4P pool, seeds 700-719 h012 file only | 160 | 90/160 | +371.6 | 70 | 0 | seat0: 16/40, avg -1258.9 |
+| Loop046 vs 4P pool, seeds 700-719 h012 + h2 combined | 240 | 135/240 | +371.6 | 105 | 0 | seat0: 24/60, avg -1258.9 |
 
 Local proxy reading:
 
